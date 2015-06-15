@@ -1,0 +1,17 @@
+<template name="channels">
+	<h3 class="add-room">
+		{{_ "chatRooms.Channels"}}
+		<i class="a-plus"></i>
+	</h3>
+	{{#if total}}
+		<ul>
+			{{#each rooms}}
+				{{> chatRoomItem }}
+			{{/each}}
+		</ul>
+	{{else}}
+		<p class="empty">{{_ "chatRooms.No_channels_yet" }}</p>
+	{{/if}}
+
+	<a href="" class="more more-channels">{{_ "chatRooms.More_channels"}} ..</a>
+</template>

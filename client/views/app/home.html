@@ -1,0 +1,38 @@
+<template name="home">
+	<section class="page-container page-home page-static">
+		<head class="fixed-title">
+			<div>
+				<div class="burger">
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+				<h2>
+					<span class="room-title">{{_ "home.welcome"}}<img class="logo" src="/images/logo/logo-dark.svg" /></span>
+				</h2>
+			</div>
+		</head>
+		<div class="content">
+			<div class="info">
+				<p>{{_ "home.Have_your_own_chat"}}</p>
+				<p>&larr; {{_ "home.use_menu"}}.</p>
+			</div>
+			{{ > social withParagraph }}
+		</div>
+	</section>
+	<!-- <section class="flex-tab">
+		<div class="control">
+			<button class="more"><span class="arrow {{arrowPosition}}"></span></button>
+		</div>
+		<div class="content">
+			<div class="list-view">
+				<div class="status">
+					<h2>{{_ "home.Chat_Rooms"}}</h2>
+					<p>
+						{{{_ "chatWindowDashboard.Showing_online_users" total_online=1 total=1}}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</section> -->
+</template>
